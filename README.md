@@ -1,3 +1,16 @@
+# Nerve of Steel
+### MGTC28 Weekly Exercise 5
+This is a program written in Python by modifying **timer.py**
+
+Nerve of Steel is a party game where players sit in a circle.  When the game begins:
+
+  1. The program displays "Players stand"
+  2. The program sleeps for a random time between 10 to 25 seconds. 
+  3. While the program is sleeping, players can sit down. 
+  4. Keep track of the people who sat down.  Create a list, prompting the user to enter the names of those who sat.
+  5. When sleep is over, the program displays "Time's Up." The last person to sit down wins. Players still standing are eliminated, and the winner is "the last name entered on        the list."
+
+
 # Timer
 ### a MGTC28 Python example
 This is a timer program written in Python  
