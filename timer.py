@@ -1,23 +1,32 @@
-"""
-This program is used as an example for MGTC28.
-timer.py is a simple Python script that will allow user to set timer duration.
-Upon timer expiry, user will see the time up meme and sound notification.
-timer.py uses the time library to help keep track of time
-"""
-
-
-# This program is timer that counts down
-
 
 import time # The time library has a sleep function that will pause the script for a specifized amount of time
 from PIL import Image # the pillow library makes it easy to display images 
+import random
 
 im = Image.open("times-up.jpeg")
 
-# ask user to enter desired countdown time
-set_time = int(input("Please set your timer in seconds: "))
+def nerve_of_steel():
+    print("Players stand.") # step 1
 
-time.sleep(set_time)
+    # step 2: I imported random library
+    # we can use random.randint(10, 25) and store it in a variable called sleep_time
 
-im.show()
+    print("The program is now sleeping. Players can sit down.") # step 3
+    time.sleep(sleep_time)
+    
+    sat_down = [] # initialize a list for all players who sat down
+    
+    im.show() # show "Time's up!" meme
+    
+    # step 4: after the timer's up
+    # maybe in a while, try, except loop we can ask user to input names of those who sat down in order
+    # append these to our list
+    # Question: are we able to have user input player names while the timer is running? Or would that lag out the timer?
+    
+    if len(sat_down) != 0: # step 5: check if list is not empty (if players have sat down)
+        winner = sat_down[-1] # get last person to sit down
+        print(f"{winner} is the last person to sit down and is the winner!")
+    else:
+        print("No one sat down!")
 
+nerve_of_steel()
