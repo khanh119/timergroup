@@ -27,6 +27,6 @@ def nerve_of_steel():
         winner = sat_down[-1] # get last person to sit down
         print(f"{winner} is the last person to sit down and is the winner!")
     else:
-        print("No one sat down!")
+        print("No one sat down! There is no winner.")
 
 nerve_of_steel()
