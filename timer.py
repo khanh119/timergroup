@@ -9,6 +9,7 @@ def nerve_of_steel():
 
     # step 2: I imported random library
     # we can use random.randint(10, 25) and store it in a variable called sleep_time
+    sleep_time = random.randint(10, 25)
 
     print("The program is now sleeping. Players can sit down.") # step 3
     time.sleep(sleep_time)
@@ -19,8 +20,11 @@ def nerve_of_steel():
 
     # step 4: after the timer's up
     # maybe in a while, try, except loop we can ask user to input names of those who sat down in order
-    # append these to our list
-    # Question: are we able to have user input player names while the timer is running? Or would that lag out the timer?
+    while True:
+        player = input("Enter the name of the player who sat down (or press Enter to finish): ")
+        if player == "":
+            break
+        sat_down.append(player)
 
     if len(sat_down) != 0: # step 5: check if list is not empty (if players have sat down)
         winner = sat_down[-1] # get last person to sit down
