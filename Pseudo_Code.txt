@@ -1,0 +1,29 @@
+PRINT "Players stand."
+
+GENERATE a random number between 10 and 25 and STORE it in 'sleep_time'.
+
+PRINT "The program is now sleeping. Players can sit down."
+
+SLEEP for 'sleep_time' seconds (pause the program).
+
+INITIALIZE an empty list called 'sat_down' to track players who sat down.
+
+DISPLAY the "Time's Up" image.
+
+WHILE True:
+    PROMPT the user to input a player's name who sat down.
+    
+    IF the user presses Enter without entering a name:
+        BREAK out of the loop.
+    
+    OTHERWISE:
+        ADD the player's name to the 'sat_down' list.
+
+IF the 'sat_down' list is NOT empty:
+    SET 'winner' to the last name in the 'sat_down' list.
+    PRINT "<winner> is the last person to sit down and is the winner!"
+
+OTHERWISE:
+    PRINT "No one sat down!"
+
+END the game.
